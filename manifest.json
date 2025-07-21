@@ -2,6 +2,11 @@
   "manifest_version": 3,
   "name": "Custom Shortcuts",
   "version": "1.0.0",
+  "applications": {
+    "gecko": {
+      "id": "custom-shortcuts-firefox"
+    }
+  },
   "description": "Create custom keyboard shortcuts for various browser actions",
   "permissions": ["storage", "tabs", "scripting", "search", "activeTab"],
   "host_permissions": ["<all_urls>"],
