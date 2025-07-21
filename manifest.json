@@ -2,9 +2,9 @@
   "manifest_version": 3,
   "name": "Custom Shortcuts",
   "version": "1.0.0",
-  "applications": {
+  "browser_specific_settings": {
     "gecko": {
-      "id": "custom-shortcuts-firefox"
+      "id": "{4f06a7b2-26d3-4b96-b0f1-75d09b6c819a}"
     }
   },
   "description": "Create custom keyboard shortcuts for various browser actions",
