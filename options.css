@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+header {
+  background: linear-gradient(135deg, #2c5aa0 0%, #1e3a8a 100%);
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.header-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 0 0 20px 0;
+  opacity: 0.9;
+  font-size: 1.1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.content {
+  padding: 40px;
+}
+
+h2 {
+  color: #2c5aa0;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+form {
+  background: #f8fafc;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  border: 1px solid #e2e8f0;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+
+label:first-of-type {
+  margin-top: 0;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2c5aa0;
+  box-shadow: 0 0 0 3px rgba(44, 90, 160, 0.1);
+}
+
+input[readonly] {
+  background-color: #f9fafb;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background: linear-gradient(135deg, #2c5aa0 0%, #1e3a8a 100%);
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 25px;
+}
+
+button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(44, 90, 160, 0.3);
+}
+
+button[type="submit"]:active {
+  transform: translateY(0);
+}
+
+#savedShortcuts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#savedShortcuts li {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+#savedShortcuts li:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.shortcut-info {
+  flex: 1;
+}
+
+.shortcut-key {
+  color: #2c5aa0;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.shortcut-action {
+  color: #6b7280;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+  transform: translateY(-1px);
+}
+
+.info-box {
+  background: #e3f2fd;
+  border-left: 4px solid #2196f3;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 4px;
+  font-size: 0.95em;
+  color: #1976d2;
+}
+
+footer {
+  background: #f8fafc;
+  padding: 30px;
+  text-align: center;
+  color: #6b7280;
+  border-top: 1px solid #e2e8f0;
+}
+
+.icon-credit {
+  margin-top: 10px;
+  display: block;
+}
+
+.icon-credit a {
+  color: #2c5aa0;
+  text-decoration: none;
+}
+
+.icon-credit a:hover {
+  text-decoration: underline;
+}
+
+.warning {
+  background: #fef3cd;
+  border: 1px solid #faeaa7;
+  color: #8a6d3b;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.success {
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  #savedShortcuts li {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .delete-btn {
+    align-self: flex-end;
+  }
+}

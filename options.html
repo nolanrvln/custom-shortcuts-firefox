@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Custom Shortcuts - Options</title>
+    <link rel="stylesheet" href="options.css" />
+    <link
+      rel="icon"
+      type="image/ico"
+      sizes="128x128"
+      href="icons/icon-128.ico"
+    />
+    <link rel="icon" type="image/ico" sizes="48x48" href="icons/icon-48.ico" />
+    <link rel="icon" type="image/ico" sizes="32x32" href="icons/icon-32.ico" />
+    <link rel="icon" type="image/ico" sizes="16x16" href="icons/icon-16.ico" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-icon">⌨️</div>
+        <h1>Custom Shortcuts</h1>
+        <p class="subtitle">
+          Manage your custom keyboard shortcuts and actions
+        </p>
+        <nav>
+          <a
+            href="https://github.com/nolanrvln/custom-shortcuts-firefox"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View on GitHub
+          </a>
+        </nav>
+      </header>
+
+      <div class="content">
+        <div class="warning">
+          <strong>⚠️ Important:</strong> Make sure your shortcuts don't conflict
+          with Firefox's built-in shortcuts. Reserved shortcuts will be
+          automatically detected and rejected.
+        </div>
+
+        <form id="shortcutForm">
+          <label for="shortcut">Shortcut Combination:</label>
+          <input
+            type="text"
+            id="shortcut"
+            name="shortcut"
+            placeholder="Press your desired key combination"
+            readonly
+            required
+            title="Click here and press your desired key combination"
+          />
+
+          <label for="actionType">Action Type:</label>
+          <select id="actionType" name="actionType" required>
+            <option value="">-- Select an action --</option>
+            <option value="open_url">Open URL(s)</option>
+            <option value="detach_tab">Detach Tab to New Window</option>
+            <option value="run_js">Run JavaScript Code</option>
+            <option value="search_selected_text">Search Selected Text</option>
+          </select>
+
+          <div id="paramsContainer">
+            <!-- Dynamic params appear here -->
+          </div>
+
+          <button type="submit">💾 Save Shortcut</button>
+        </form>
+
+        <h2>📋 Saved Shortcuts</h2>
+        <ul id="savedShortcuts">
+          <!-- Shortcuts will be loaded here -->
+        </ul>
+      </div>
+
+      <footer>
+        <small>
+          © 2025 Rivalin Nolan. This extension respects your privacy and does
+          not collect any personal data.
+        </small>
+        <br />
+        <small class="icon-credit">
+          Icons by
+          <a
+            href="https://www.flaticon.com/free-icons/keyboard-and-mouse"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Keyboard and mouse icons"
+            >Freepik - Flaticon</a
+          >
+        </small>
+      </footer>
+    </div>
+
+    <script src="utils.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>

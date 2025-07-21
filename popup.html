@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Shortcuts</title>
+    <link rel="stylesheet" href="popup.css" />
+    <link
+      rel="icon"
+      type="image/ico"
+      sizes="128x128"
+      href="icons/icon-128.ico"
+    />
+    <link rel="icon" type="image/ico" sizes="48x48" href="icons/icon-48.ico" />
+    <link rel="icon" type="image/ico" sizes="32x32" href="icons/icon-32.ico" />
+    <link rel="icon" type="image/ico" sizes="16x16" href="icons/icon-16.ico" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Custom Shortcuts</h1>
+      <p>Quick access panel</p>
+    </div>
+
+    <div class="shortcuts-count">
+      <span class="count-number" id="shortcutCount">0</span>
+      <span class="count-label">shortcuts configured</span>
+    </div>
+
+    <div class="actions">
+      <button class="action-btn primary" id="openOptions">
+        ⚙️ Manage Shortcuts
+      </button>
+      <button class="action-btn" id="refreshShortcuts">
+        🔄 Refresh Shortcuts
+      </button>
+      <button class="action-btn" id="viewHelp">❓ View Help</button>
+    </div>
+
+    <div class="footer">
+      <a
+        href="https://github.com/nolanrvln/custom-shortcuts-firefox"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View on GitHub
+      </a>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
